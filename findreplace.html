@@ -3,39 +3,51 @@
 <head>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/jquery-1.11.3.js"></script>
   <script src="js/scripts.js"></script>
   <title>Find and Replace</title>
 </head>
 <body>
   <div class="container">
-    <h1>Find and Replace</h1>
-    <form id="findform">
-      <div class="form-group">
-        <label for="sentence">Enter a sentence:</label>
-        <input type="text" id="sentence" required>
-      </div>
-      <div class="form-group">
-        <label for="wordfind">Enter a word you would like to replace:</label>
-        <input type="text" id="wordFind" required>
-      </div>
-      <div class="form-group">
-        <label for="wordreplace">Enter the word you wish to replace it with:</label>
-        <input type="text" id="wordReplace" required>
-      </div>
-
-      <button name="submit" class="btn btn-info">Do it!</button>
-    </form>
-    <div id="result">
-      <br>
-      <h6>Your new sentence is:</h6>
-      <h6><span class="result"></span></h6>
-    </div>
-    <div id="error">
-      <br>
-      <span class="error"></span>
-    </div>
-
+  	<div class="row clearfix">
+  		<div class="col-md-12 column">
+  			<div class="page-header">
+  				<h1>
+  					Find and Replace <span><small> <i>By: Alex  </i> </small></span>
+  				</h1>
+  			</div>
+  			<div class="row clearfix">
+  				<div class="col-md-12 column">
+  					<form class="form-horizontal" role="form" id="findform">
+              <label for="sentence">Enter A Sentence:</label>
+  						<div class="form-group">
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="sentence" required>
+  							</div>
+  						</div>
+              <label for="find">Find This Word:</label>
+  						<div class="form-group">
+  							<div class="col-sm-10">
+                  <input type="text" class="form-control" id="wordFind" required>
+  							</div>
+  						</div>
+              <label for="replace">And Replace With This Word:</label>
+              <div class="form-group">
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="wordReplace" required>
+                  <br>
+                  <button name="submit" class="btn btn-block btn-info">Find And Replace!</button>
+                </div>
+              </div>
+            <div id="result">
+              <br>
+              <span class="result"></span>
+            </form>
+            </div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
   </div>
-</body>
 </html>

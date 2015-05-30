@@ -1,14 +1,36 @@
 h1 {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
-  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 1em;
+  font-family: "veranda", serif;
+  font-size: 50px;
+  color: black;
 }
 
-#result {
-  display: none;
+body {
+  background-color: #837E7E;
+}
+.btn-info {
+  background-color: black;
+  border-color: black;
 }
 
-#error {
-  display: none;
+.btn-info:hover {
+  background-color: #0B2F3A;
+  border-color: #0B2F3A;
+}
+
+
+h1 small,
+.h1 small {
+  color: black;
+}
+
+.form-control {
+  background-color: #B6B1B1;
+  border-color: black;
+}
+
+.page-header {
+  border-bottom: 0px;
 }
