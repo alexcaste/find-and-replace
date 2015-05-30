@@ -14,6 +14,12 @@ var inputChecker = function(wordFind) {
   };
 };
 
+var nonCharacter = function(word) {
+  var notLetterNumber = /[^a-z0-9]|\s+|\r?\n|\r/gi
+  var newWord = word.replace(notLetterNumber, "");
+  return newWord;
+};
+
 
 $(document).ready(function() {
   $("form#findform").submit(function(event) {

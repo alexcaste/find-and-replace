@@ -14,3 +14,9 @@ describe('inputChecker', function(){
     expect(inputChecker("e")).to.equal(true)
   });
 });
+
+describe('nonCharacter', function(){
+  it("will find and remove any non-alphanumeric characters from a word", function(){
+    expect(nonCharacter("!t h.e")).to.equal("the")
+  });
+});
