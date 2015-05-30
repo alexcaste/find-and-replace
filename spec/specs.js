@@ -5,6 +5,12 @@ describe('replacer', function(){
 
   it("will find words in multiple sentences", function(){
     expect(replacer("The red car is red.  A rosy red.  Not a dark red or ugly red.", "red", "blue")).to.equal("The blue car is blue.  A rosy blue.  Not a dark blue or ugly blue.")
+  });
+});
 
+
+describe('inputChecker', function(){
+  it("will not replace single letters only words", function(){
+    expect(inputChecker("e")).to.equal(true)
   });
 });

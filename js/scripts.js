@@ -1,7 +1,17 @@
 var replacer = function(sentence, wordFind, wordReplace) {
-  var finder = new RegExp(wordFind, "gi");
+  var searchWord = "\\b(" + wordFind + ")\\b";
+  var finder = new RegExp(searchWord, "gi");
   var newSentence = sentence.replace(finder, wordReplace);
 return newSentence;
+};
+
+var inputChecker = function(wordFind) {
+  var wordArray = wordFind.split("");
+  if (wordArray.length === 1) {
+    return true;
+  } else {
+    return false;
+  };
 };
 
 
