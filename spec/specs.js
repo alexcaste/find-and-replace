@@ -11,6 +11,10 @@ describe('replacer', function(){
     expect(replacer("The red car is red.  A rosy red.  Not a dark red or ugly red.", "a", "blue")).to.equal("We can only search or replace whole words.")
   });
 
+  it("will not search non alpha numeric characters", function(){
+    expect(replacer("The red car is red.  A rosy red.  Not a dark red or ugly red.", "re.d", "blue")).to.equal("The blue car is blue.  A rosy blue.  Not a dark blue or ugly blue.")
+  });
+
 });
 
 
