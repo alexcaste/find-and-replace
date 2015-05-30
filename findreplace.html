@@ -16,20 +16,26 @@
         <input type="text" id="sentence" required>
       </div>
       <div class="form-group">
-        <label for="wordfind">Enter a word to find:</label>
-        <input type="text" id="wordfind" required>
+        <label for="wordfind">Enter a word you would like to replace:</label>
+        <input type="text" id="wordFind" required>
       </div>
       <div class="form-group">
         <label for="wordreplace">Enter the word you wish to replace it with:</label>
-        <input type="text" id="wordreplace" required>
+        <input type="text" id="wordReplace" required>
       </div>
 
       <button name="submit" class="btn btn-info">Do it!</button>
     </form>
     <div id="result">
       <br>
-      <span class="result"></span>
+      <h6>Your new sentence is:</h6>
+      <h6><span class="result"></span></h6>
     </div>
+    <div id="error">
+      <br>
+      <span class="error"></span>
+    </div>
+
   </div>
 </body>
 </html>
