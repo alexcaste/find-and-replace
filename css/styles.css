@@ -20,6 +20,11 @@ body {
   border-color: #0B2F3A;
 }
 
+.btn-info.active, .btn-info.focus, .btn-info:active, .btn-info:focus, .btn-info:hover, .open>.dropdown-toggle.btn-info {
+  background-color: black;
+
+}
+
 
 h1 small,
 .h1 small {
