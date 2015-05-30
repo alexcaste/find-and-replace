@@ -1,11 +1,18 @@
 var replacer = function(sentence, wordFind, wordReplace) {
   var wordFind = nonCharacter(wordFind)
   var wordReplace = nonCharacter(wordReplace)
-    var searchWord = "\\b(" + wordFind + ")\\b";
-    var finder = new RegExp(searchWord, "gi");
-    var newSentence = sentence.replace(finder, wordReplace);
+  var searchWord = "\\b(" + wordFind + ")\\b";
+  var wordChecker = sentence.search(searchWord);
+  var finder = new RegExp(searchWord, "gi");
+  var newSentence = sentence.replace(finder, wordReplace);
 
-  return newSentence;
+  if (wordChecker === -1) {
+    return wordFind + " is not in " + sentence;
+  } else if (newSentence === sentence) {
+    return "You did not change anything"
+  } else {
+    return newSentence;
+  };
 };
 
 
